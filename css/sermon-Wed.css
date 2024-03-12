@@ -1,0 +1,145 @@
+/* main부분 */
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 60px 0 0 0;
+    gap: 100px;
+}
+
+.line{
+    background-color: #191919;
+    width: 80%;
+    height: 1px;
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.slideshow img {
+    width: 100%;
+    display: none;
+}
+
+.slideshow img.active {
+    display: block;
+}
+
+.sermon-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+}
+
+.sermon-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 30px;
+}
+
+.sermon {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 0;
+
+    width: 373px;
+    height: 291px;
+}
+
+.sermon>img {
+    width: 373px;
+    height: 209px;
+}
+
+.sermon-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.sermon-content>* {
+    display: inline-block;
+}
+
+.sermon-view {
+    font-family: Arial, sans-serif;
+    display:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+    padding: 60px 0 0 0;
+    gap: 20px;
+}
+
+.sermon-title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sermon-title > h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.sermon-sub{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sub-detail{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 3% 0 0 0;
+}
+
+.sub1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sub1 > .title{
+    width: 100px;
+    font-weight: bold;
+}
+
+.image{
+    width: 600px;
+    height: 335px;
+}

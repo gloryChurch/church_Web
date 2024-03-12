@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공지사항</title>
+</head>
+<body>
+
+<!-- 공지사항이 표시될 컨테이너 div -->
+<div id="noticeContainer"></div>
+
+<script>
+    const notice = [
+        {
+            "id": 1,
+            "date": 1,
+            "txt1" : "나는"
+        }, {
+            "id": 2,
+            "date": 2, 
+            "tit1" : "나는",
+            "txt1" : "나는",
+            "txt2" : "나는"
+        }, {
+            "id": 3,
+            "date": 3, 
+            "txt1" : "나는",
+            "txt2" : "나는",
+            "txt3" : "나는"
+        }, {
+            "id": 4,
+            "date": 4, 
+            "txt1" : "나는",
+            "txt2" : "나는",
+            "txt3" : "나는",
+            "txt4" : "나는"
+        }, {
+            "id": 5,
+            "date": 5, 
+            "txt1" : "나는",
+            "txt2" : "나는",
+            "txt3" : "나는",
+            "txt4" : "나는",
+            "txt5" : "나는"
+        }
+    ];
+
+    // 각 공지사항에 대한 HTML을 동적으로 생성하는 함수
+    function createNoticeHTML(noticeItem) {
+        let html = `<div id="notice_${noticeItem.id}">
+                        <p>날짜: ${noticeItem.date}</p>`;
+
+        // 각 txt에 대한 HTML을 동적으로 생성
+        for (let i = 1; noticeItem[`tit${i}`]; i++) {
+            html += `<h2>${noticeItem[`tit${i}`]}</h2>`;
+            for(let j = 1; noticeItem[`txt${j}`]; j++){
+            html += `<p>${noticeItem[`txt${i}`]}</p>`;
+            }
+        }
+
+        html += `</div>`;
+        return html;
+    }
+
+    // 공지사항이 표시될 컨테이너 요소를 가져옴
+    const noticeContainer = document.getElementById('noticeContainer');
+
+    // 각 공지사항을 순회하며 HTML을 컨테이너에 추가
+    notice.forEach(noticeItem => {
+        const noticeHTML = createNoticeHTML(noticeItem);
+        noticeContainer.innerHTML += noticeHTML;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* main부분 */
+main {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    padding: 60px 0 0 0;
+    gap: 100px;
+}
+
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.slideshow img {
+    width: 100%;
+    display: none;
+}
+
+.slideshow img.active {
+    display: block;
+}
+
+.main-schedule {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: auto;
+    gap: 100px;
+    padding-right: 10%;
+}
+
+.img{
+    width: auto;
+    height: auto;
+}
+.img>img {
+    width: 150px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.text{
+    width: 15%;
+    height: auto;
+}
+
+.text > .title{
+    text-align: left;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.text > .time{
+    margin-top: 30px;
+    text-align: left;
+    font-size: 28px;
+    font-weight: 550;
+}
+
+.text > .list{
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+.sub-schedule{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    justify-content: space-between;
+    width: 65%;
+    height: auto;
+    gap: 100px;
+}
+
+.sub-schedule > .title{
+    width: 30%;
+    text-align: right;
+    font-size: 45px;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.sub-schedule > .sub-grid{
+    width: 50%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+
+}
+
+.sub_grid > .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.grid > .name{
+    width: auto;
+    font-size: 25px;
+    font-weight: lighter;
+    padding-bottom: 10px;
+}
+
+.grid > .time{
+    width: auto;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.line{
+    margin-top: 10px;
+    background-color: black;
+    width: 100%;
+    height: 1px;
+}

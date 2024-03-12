@@ -1,0 +1,124 @@
+*{
+    color: #202659;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    background-color: #7295CD;
+    color: rgb(255, 255, 255);
+    padding: 0;
+    z-index: 1000;
+    border-bottom: #202659 solid 1px;
+}
+header > a > img {
+    width: 100px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #7295CD;
+    border-bottom: #202659 solid 1px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #416194;
+}
+.sub-menu1 {
+    display: none;
+    position: absolute;
+    left: 0;
+    flex-direction: row;
+    background-color: #7295CD;
+    padding: 0;
+    z-index: 1;
+    border-bottom: #202659 solid 1px;
+    width: 100%; /* Set width to 100% */
+    text-align: center; /* Center-align the items */
+    justify-content: center; /* Center-align the sub-menu items */
+}
+
+.sub-menu1 a {
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+.parent-menu1:hover .sub-menu1 {
+    display: flex;
+}
+
+footer {
+    max-height: 300px;
+    background-color: #7295CD; /* Light Blue color */
+    color: #fff; /* Text color for better readability on the blue background */
+    padding: 20px 0; /* Adjust the padding as needed */
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 300px; /* Adjust the logo size as needed */
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links li {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    color: #202659;
+}
+
+.show{
+    display: flex;
+}
